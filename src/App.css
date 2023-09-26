@@ -1,0 +1,23 @@
+#root {
+  margin: 0 auto;
+  padding: 5rem 8rem;
+}
+
+.mainBody {
+  color: #8661ff;
+  display: flex;
+  gap: 2.5%;
+}
+
+.filters {
+  width: 30%;
+  background-color: #18181c;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+}
+.tasks {
+  width: 70%;
+  background-color: #18181c;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+}
