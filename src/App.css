@@ -3,6 +3,10 @@
   padding: 5rem 8rem;
 }
 
+h2 span {
+  color: #8661ff;
+}
+
 .mainBody {
   color: #8661ff;
   display: flex;
@@ -20,4 +24,81 @@
   background-color: #18181c;
   border-radius: 10px;
   padding: 1rem 2rem;
+}
+
+.headingTasks span {
+  color: #fff;
+}
+
+.insertTask {
+  display: flex;
+  gap: 20px;
+}
+
+.search {
+  width: 100%;
+  padding: 0 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: #2f2d36;
+  color: #8661ff;
+}
+
+.search::-webkit-input-placeholder {
+  color: #8661ff;
+}
+
+.addTask {
+  background-color: #8661ff;
+  white-space: nowrap;
+  /* margin-top: 20px; */
+}
+
+.filterButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.filterButtons button {
+  text-align: left;
+}
+
+.activeButton {
+  background-color: #2f2d36;
+}
+
+.tableBody {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+}
+
+.taskRow {
+  display: flex;
+  padding: 0 20px;
+  margin: 0;
+  border-radius: 10px;
+  background-color: #2f2d36;
+  justify-content: space-between;
+  align-items: center;
+}
+.checkBoxAndName {
+  display: flex;
+}
+.taskRow p {
+  margin-left: 5px;
+}
+
+.strikeTheLine {
+  text-decoration: line-through;
+}
+
+.trashIcon {
+  cursor: pointer;
+}
+
+.trashIcon:hover {
+  color: #fff;
 }
