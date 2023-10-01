@@ -3,7 +3,7 @@ import "./App.css";
 import { BsTrash3Fill } from "react-icons/bs";
 
 function App() {
-  const [count, setCount] = useState(4);
+  const [count, setCount] = useState(2);
 
   const incrementCount = () => setCount((count) => count + 1);
   const decrementCount = () => setCount((count) => count - 1);
@@ -13,8 +13,6 @@ function App() {
   let [data, setData] = useState([
     { key: 0, name: "Some Task", isDone: true },
     { key: 1, name: "Some Task", isDone: false },
-    { key: 2, name: "Some Task", isDone: false },
-    { key: 3, name: "Some Task", isDone: false },
   ]);
 
   let handleDelete = (k) => {
@@ -58,22 +56,6 @@ function App() {
               }}
             >
               All
-            </button>
-            <button
-              className={selectedFilter === 1 ? "activeButton" : ""}
-              onClick={() => {
-                setSelectedFilter(1);
-              }}
-            >
-              Not Completed
-            </button>
-            <button
-              className={selectedFilter === 2 ? "activeButton" : ""}
-              onClick={() => {
-                setSelectedFilter(2);
-              }}
-            >
-              Completed
             </button>
           </div>
         </div>
